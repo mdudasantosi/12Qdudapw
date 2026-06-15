@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // 1º LISTA, 2º PUSH
+        var cantores = [];
+
+        cantores.push("Michael Jackson")
+        cantores.push("Ariana Grande")
+        cantores.push("Taylor Swift")
+        cantores.push("Bruno Mars")
+        cantores.push("Frank Ocean")
+        cantores.push("Lana Del Rey")
+        cantores.push("Chase Atlantic")
+        cantores.push("SZA")
+        cantores.push("Gracie Abhrams")
+        cantores.push("Arctic Monkeys")
+
+
+        // 3º POP
+        cantores.pop()
+        cantores.pop()
+        cantores.pop()
+        
+        // 4º SORT
+        
+        cantores.sort()
+
+
+        // 5º REDUCE
+        var numeros = [1, 2, 3, 4]
+
+        const soma = numeros.reduce((acumulador, numeroInicial) =>{
+            return acumulador + numeroInicial
+        })
+
+
+        // 6º MAP
+        var num = [10, 20, 30]
+
+        var dobrados = num.map(n => n * 2)
+
+        // 7º FILTER
+        var names = ["Nate", "Cassie", "Maddie", "Rue", "Madison Bee"]
+        var resultado = names.filter(names => names.startsWith('M'))
+
+        // 8º FIND
+        var number = [16, 17, 18]
+
+        var encontrado = number.find(number => number < 17)
+
+        // 9º LENGTH
+        var frutas = ["Maçã", "Banana", "Morango"]
+        console.log(frutas.length)
+
+        // 10º SPLICE
+        
+        const frutas1 = ["Maçã", "Pêra"]
+        frutas1.splice = [1, 0, "kiwi"]
+
+        const frutas2 = ["Maçã", "Pêra", "Kiwi"]
+        frutas2.splice(2)
+
+        const frutas3 = ["Maçã", "Pêra", "Kiwi"]
+        frutas3.splice (2,2, "Morango")
+
+        // 11º Criar um Objeto Aluno e Adicionar 10 Alunos
+        
+        const alunos = [];
+
+        for (let i = 1; i <= 10; i++) {
+        alunos.push({
+            nome: "Aluno " + i
+        });
+        }
+
+        // 12º Criar um Arquivo em JSON com 10 Produtos
+         var idolsPop = require("./cantores.json");
+         console.log(idolsPop);
+
+    </script>
+</body>
+</html>
